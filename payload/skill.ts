@@ -111,14 +111,9 @@ const tools: ISkill.Skill = {
   ],
 };
 
-
 const skill: ISkill.Payload = {
   disable: false,
-  skills: [
-    programmingLanguages,
-    frameworkDevelopment,
-    tools
-  ],
+  skills: [programmingLanguages, frameworkDevelopment, tools],
   tooltip: '1: 문법 이해\n2: 실무 경험\n3: 실무 능숙',
 };
 

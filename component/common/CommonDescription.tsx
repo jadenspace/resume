@@ -40,7 +40,7 @@ function DescriptionRecursion({
   descriptions,
 }: PropsWithChildren<{ descriptions: IRow.Description[] }>) {
   return (
-    <ul className={'pl-3'}>
+    <ul className="pl-3">
       {descriptions.map((description, index) => {
         return (
           <>
