@@ -5,12 +5,13 @@ const introduce: IIntroduce.Payload = {
   disable: false,
 
   contents: [
-    'As the cherished emblem of the Linux kernel, I have become synonymous with open-source philosophy and the free software movement worldwide. My career began in the icebergs of development, where the seeds of my fascination with operating systems first sprouted. From a mere hatchling in the vast sea of code, I quickly ascended to become a pivotal figure in the Linux community. My journey has been marked by relentless dedication to system integrity, scalability, and robustness. Under my vigilant watch, countless servers have achieved unparalleled uptimes, and systems have been optimized to run like the well-oiled machines they are intended to be.',
-    'In the world of zeros and ones, my expertise has been instrumental in pioneering advancements in Linux system engineering. My flippers have crafted meticulous kernel enhancements, each aimed at streamlining performance and bolstering security across distributed networks. I am known in the community for my ability to dive deep into complex codebases and emerge with pearls of innovation that drive the collective progress of Linux environments. Advocacy is also a part of my plumage – spreading the word about the virtues of open-source and encouraging the adoption of Linux, from personal desktops to corporate data centers. As a mentor, I have nurtured the growth of young hatchlings into seasoned professionals, contributing to the diversity and vitality of our ecosystem.',
+    '안녕하세요, 프론트엔드 개발자 김연호입니다.',
+    '저는 프론트엔드 기술의 급격한 변화를 몸소 겪어오며, 지속적인 학습과 적응을 통해 여러 기술 트렌드를 경험해왔습니다.',
+    'ES5를 시작으로 ESNext, Vue, React, TypeScript, 그리고 Next.js를 활용한 풀스택 개발에 이르기까지, 프론트엔드 생태계의 전체적인 진화 과정을 함께해 왔습니다. ' +
+    '이러한 경험을 바탕으로 앞으로도 최신 기술을 선도적으로 도입하고, 이를 팀원들과 공유하며 함께 성장해나가는 "평생 개발자"가 되는 것이 저의 목표입니다.',
+    '현재는 AI 서비스에도 주목하고 있으며, 이러한 혁신적인 기술들을 연구하고 실제 프로젝트에 적용함으로써, 회사의 기술적 경쟁력 향상에 기여하도록 하겠습니다.'
   ],
-  sign: 'Tux',
-  // sign: packageJson.author.name,
-  // latestUpdated: '2019-07-24',
+  sign: 'KimYeonho',
   latestUpdated: lastestUpdatedAt,
 };
 

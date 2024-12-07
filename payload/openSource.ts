@@ -4,67 +4,44 @@ const openSource: IOpenSource.Payload = {
   disable: false,
   list: [
     {
-      title: 'Linux Kernal',
+      title: 'Next-js-Admin-Boilerplate',
       descriptions: [
         {
-          content: 'Regular contributor to kernel patches.',
+          content: 'Next.js 14+, Tailwind CSS 3.4+, MSW 2.4, Typescript 내장',
         },
         {
-          content: 'Active member of kernel security audit team.',
+          content: 'MUI X를 통한 테이블 컴포넌트 제공',
+        },
+        {
+          content: 'react-hook-form useController를 통한 폼 컨트롤',
+        },
+        {
+          content: 'https://github.com/jadenspace/Next-js-Admin-Boilerplate',
+          href: 'https://github.com/jadenspace/Next-js-Admin-Boilerplate',
         },
       ],
     },
     {
-      title: 'GNOME',
+      title: 'jd-slider',
       descriptions: [
         {
-          content: 'Contributor to UX improvements for system utilities.',
-        },
-        {
-          content: 'https://github.com/GNOME',
-          href: 'https://github.com/GNOME',
-        },
-      ],
-    },
-    {
-      title: 'node',
-      descriptions: [
-        { content: 'Node.js JavaScript runtime' },
-        { content: 'Contributor' },
-        {
-          content: 'https://github.com/nodejs/node',
-          href: 'https://github.com/nodejs/node',
-        },
-        {
-          content: 'Github Stars: ',
-          postImage: 'https://img.shields.io/github/stars/nodejs/node.svg?style=popout',
-        },
-      ],
-    },
-    {
-      title: 'NestJS',
-      descriptions: [
-        {
-          content: 'A progressive Node.js framework',
+          content: '슬라이더 jQuery 플러그인',
         },
         {
           content:
-            'for building efficient, scalable, and enterprise-grade server-side applications',
+            '운영팀에서의 다양한 슬라이더 옵션 요청으로 인해 자유롭게 커스텀할 수 있는 플러그인 제작',
         },
         {
-          content: 'Contributor',
+          content: 'https://www.npmjs.com/package/jd-slider',
+          href: 'https://www.npmjs.com/package/jd-slider',
         },
         {
-          content: 'https://github.com/nestjs/nest',
-          href: 'https://github.com/nestjs/nest',
+          content: 'Codepen 예제 (jQuery)',
+          href: 'https://codepen.io/jadenspace/pen/dypLpbb',
         },
         {
-          content: 'Monthly Download: ',
-          postImage: 'https://img.shields.io/npm/dm/@nestjs/core.svg',
-        },
-        {
-          content: 'Github Stars: ',
-          postImage: 'https://img.shields.io/github/stars/nestjs/nest.svg?style=popout',
+          content: 'Codepen 예제 (es6 마이그레이션)',
+          href: 'https://codepen.io/jadenspace/pen/LYbRjeM',
         },
       ],
     },

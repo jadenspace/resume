@@ -1,7 +1,7 @@
 {
   "name": "resume-nextjs",
-  "lastestUpdatedAt": "2024-07-22",
-  "version": "1.2.4",
+  "lastestUpdatedAt": "2024-12-08",
+  "version": "1.0.0",
   "description": "Static HTML based RESUME made with next.js",
   "main": "index.js",
   "scripts": {
@@ -28,9 +28,9 @@
     "next"
   ],
   "author": {
-    "name": "Yowu Yu",
-    "email": "me@yowu.dev",
-    "url": "https://yowu.dev"
+    "name": "Kim Yeonho",
+    "email": "yeonhos2@naver.com",
+    "url": "https://jadenspace.github.io"
   },
   "contributors": [],
   "license": "MIT",

@@ -4,175 +4,122 @@ const programmingLanguages: ISkill.Skill = {
   category: 'Programming Languages',
   items: [
     {
-      title: 'C',
+      title: 'Typescript',
       level: 3,
     },
     {
-      title: 'Shell Scripting',
+      title: 'Javascript',
       level: 3,
+    },
+    {
+      title: 'HTML/CSS',
+      level: 3,
+    },
+    {
+      title: 'PHP',
+      level: 1,
     },
     {
       title: 'Python',
-      level: 3,
-    },
-    {
-      title: 'Perl',
-      level: 2,
-    },
-    {
-      title: 'Golang',
-      level: 2,
-    },
-    {
-      title: 'Rust',
       level: 1,
     },
   ],
 };
 
-const kernelDevelopment: ISkill.Skill = {
-  category: 'Kernel Development',
+const frameworkDevelopment: ISkill.Skill = {
+  category: 'Fameworks',
   items: [
     {
-      title: 'Kernel Programming',
+      title: 'Next.js',
       level: 3,
     },
     {
-      title: 'GNU Debugger',
+      title: 'React.js',
       level: 3,
     },
     {
-      title: 'Memory Management',
+      title: 'Vue.js',
       level: 2,
     },
     {
-      title: 'System Call Interface',
-      level: 2,
-    },
-  ],
-};
-
-const virtualization: ISkill.Skill = {
-  category: 'Virtualization',
-  items: [
-    {
-      title: 'Docker',
+      title: 'TailwindCSS',
       level: 3,
     },
     {
-      title: 'KVM',
+      title: 'SCSS',
       level: 3,
     },
     {
-      title: 'Xen',
-      level: 2,
+      title: 'CodeIgniter',
+      level: 1,
     },
     {
-      title: 'VirtualBox',
-      level: 2,
-    },
-    {
-      title: 'VMware ESXi',
+      title: 'Django',
       level: 1,
     },
   ],
 };
 
-const automation: ISkill.Skill = {
-  category: 'Automation',
+const tools: ISkill.Skill = {
+  category: 'Tools & IDEs',
   items: [
     {
-      title: 'Ansible',
-      level: 3,
+      title: 'Jetbrains IDEs',
     },
     {
-      title: 'Puppet',
-      level: 3,
+      title: 'Cursor AI Editor',
     },
     {
-      title: 'Chef',
-      level: 2,
+      title: 'Chat GPT',
     },
     {
-      title: 'Jenkins',
-      level: 2,
+      title: 'Claude AI',
     },
     {
-      title: 'CI/CD Pipelines',
-      level: 1,
+      title: 'Github Copilot',
     },
     {
-      title: 'Infrastructure as Code',
-      level: 1,
+      title: 'Github',
+    },
+    {
+      title: 'Git',
+    },
+    {
+      title: 'Bitbucket',
+    },
+    {
+      title: 'Jira',
+    },
+    {
+      title: 'Notion',
+    },
+    {
+      title: 'Slack',
+    },
+    {
+      title: 'Figma',
+    },
+    {
+      title: 'AWS Console',
+    },
+    {
+      title: 'AEM',
+    },
+    {
+      title: 'Postman',
     },
   ],
 };
 
-const networkSecurity: ISkill.Skill = {
-  category: 'Network Security',
-  items: [
-    {
-      title: 'iptables',
-      level: 3,
-    },
-    {
-      title: 'OpenSSH',
-      level: 3,
-    },
-    {
-      title: 'OpenSSL',
-      level: 2,
-    },
-    {
-      title: 'NACLs',
-      level: 2,
-    },
-    {
-      title: 'VPN Technologies',
-      level: 2,
-    },
-    {
-      title: 'Intrusion Detection',
-      level: 1,
-    },
-  ],
-};
-
-const misc: ISkill.Skill = {
-  category: 'Misc',
-  items: [
-    {
-      title: 'Coffee Brewing',
-    },
-    {
-      title: "Rubik's Cube Solving",
-    },
-    {
-      title: 'Table Tennis',
-    },
-    {
-      title: 'Guitar Playing',
-    },
-    {
-      title: 'Joke Telling',
-    },
-    {
-      title: 'Duct Tape Crafting',
-    },
-  ],
-};
 
 const skill: ISkill.Payload = {
   disable: false,
   skills: [
     programmingLanguages,
-    kernelDevelopment,
-    virtualization,
-    automation,
-    networkSecurity,
-    misc,
+    frameworkDevelopment,
+    tools
   ],
-  tooltip: '1: 기초 수준\n2: 취미 개발 수준\n3: Production 개발 가능 수준',
+  tooltip: '1: 문법 이해\n2: 실무 경험\n3: 실무 능숙',
 };
 
 export default skill;
