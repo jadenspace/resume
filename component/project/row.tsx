@@ -28,7 +28,7 @@ function serialize(payload: IProject.Item): IRow.Payload {
       );
       return `${startedAt} ~ ${endedAt}`;
     }
-    return `${startedAt} ~`;
+    return `${startedAt} ~ 진행중`;
   })();
 
   return {
