@@ -1,0 +1,13 @@
+version: 2.1
+orbs:
+  node: circleci/node@5.2.0
+jobs:
+  build:
+    executor:
+      name: node/default
+      tag: '20.15.1'
+    steps:
+      - checkout
+      - run:
+          name: install & lint build & export
+          command: npm run export:with-typedoc
