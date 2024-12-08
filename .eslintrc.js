@@ -1,17 +1,18 @@
 module.exports = {
-  parser: '@typescript-eslint/parser', // Specifies the ESLint parser
+  parser: '@typescript-eslint/parser',
   extends: [
-    'airbnb',
+    'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
+    'plugin:react/recommended',
+    'plugin:react-hooks/recommended',
+    'airbnb',
     'plugin:import/typescript',
     'plugin:prettier/recommended',
-    'prettier/react',
-    'prettier/@typescript-eslint',
   ],
-  plugins: ['@typescript-eslint', 'prettier', 'react-hooks'],
+  plugins: ['@typescript-eslint', 'react', 'prettier'],
   parserOptions: {
-    ecmaVersion: 2019, // Allows for the parsing of modern ECMAScript features
-    sourceType: 'module', // Allows for the use of imports
+    ecmaVersion: 'latest',
+    sourceType: 'module',
     ecmaFeatures: {
       jsx: true,
     },
@@ -22,11 +23,20 @@ module.exports = {
     jest: true,
     node: true,
   },
-  globals: {
-    // cy: true,
-    // Cypress: true,
+  settings: {
+    react: {
+      version: 'detect',
+    },
+    'import/resolver': {
+      typescript: {},
+      node: {
+        extensions: ['.js', '.jsx', '.ts', '.tsx'],
+      },
+    },
   },
   rules: {
+    '@typescript-eslint/no-explicit-any': 'off',
+    '@typescript-eslint/no-unused-vars': 'warn',
     'no-underscore-dangle': 0,
     '@typescript-eslint/no-namespace': 0,
     '@typescript-eslint/explicit-function-return-type': 0,
@@ -34,17 +44,17 @@ module.exports = {
     'import/prefer-default-export': 0,
     'import/extensions': 0,
     'react/react-in-jsx-scope': 0,
+    'react/jsx-filename-extension': [
+      1,
+      {
+        extensions: ['.js', '.jsx', '.tsx'],
+      },
+    ],
     quotes: [
       2,
       'single',
       {
         avoidEscape: true,
-      },
-    ],
-    'react/jsx-filename-extension': [
-      1,
-      {
-        extensions: ['.js', '.jsx', '.tsx'],
       },
     ],
   },

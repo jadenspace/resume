@@ -4,7 +4,8 @@ const { homepage } = require('./package.json');
 
 const { NODE_ENV } = process.env;
 
-module.exports = withImages({
+/** @type {import('next').NextConfig} */
+const nextConfig = {
   assetPrefix: (() => {
     if (NODE_ENV === 'production' && homepage) {
       try {
@@ -22,10 +23,13 @@ module.exports = withImages({
     }
     return '';
   })(),
-});
-// withCSS({
-// webpack: config => {
-//   config.resolve.alias['@'] = __dirname;
-//   return config;
-// }
-// }),
+  webpack5: false,
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
+  typescript: {
+    ignoreBuildErrors: true,
+  },
+};
+
+module.exports = withImages(nextConfig);

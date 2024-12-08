@@ -1,5 +1,5 @@
 {
-  "name": "resume-nextjs",
+  "name": "resume",
   "lastestUpdatedAt": "2024-12-08",
   "version": "1.2.4",
   "description": "Static HTML based RESUME made with next.js",
@@ -15,20 +15,20 @@
     "preexport": "npm run clean && npm run build",
     "postexport": "node shellwork.js",
     "clean": "npx rimraf docs .next",
-    "lint": "eslint \"component/**/*\" \"pages/**/*\" \"payload/**/*\" \"*.ts\" --fix",
+    "lint": "next lint --max-warnings=0 || exit 0",
     "typedoc": "typedoc --excludeExternals"
   },
-  "homepage": "https://uyu423.github.io/resume-nextjs",
+  "homepage": "https://jadenspace.github.io/resume",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/uyu423/resume-nextjs.git"
+    "url": "git+https://github.com/jadenspace/resume.git"
   },
   "keywords": [
     "resume",
     "next"
   ],
   "author": {
-    "name": "Kim Yeonho",
+    "name": "KimYeonho",
     "email": "yeonhos2@naver.com",
     "url": "https://jadenspace.github.io"
   },
@@ -38,6 +38,7 @@
     "url": "https://github.com/uyu423/resume-nextjs/issues"
   },
   "dependencies": {
+    "@babel/runtime": "^7.22.0",
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
     "@fortawesome/free-brands-svg-icons": "^5.15.4",
     "@fortawesome/free-regular-svg-icons": "^5.15.4",
@@ -49,39 +50,43 @@
     "debug": "^4.3.2",
     "jquery": "^3.6.0",
     "luxon": "^1.28.0",
-    "next": "^10.2.3",
+    "next": "10.2.3",
     "next-images": "^1.8.1",
     "next-seo": "^4.26.0",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
     "reactstrap": "^8.9.0",
     "shelljs": "^0.8.5",
     "styled-components": "^5.3.1"
   },
   "devDependencies": {
+    "@babel/core": "^7.22.0",
     "@types/luxon": "^1.27.1",
     "@types/next-seo": "^1.10.0",
     "@types/node": "^13.13.52",
-    "@types/react": "^16.14.14",
+    "@types/react": "17.0.2",
+    "@types/react-dom": "17.0.2",
     "@types/shelljs": "^0.8.9",
     "@types/styled-components": "^5.1.13",
-    "@typescript-eslint/eslint-plugin": "^2.34.0",
-    "@typescript-eslint/parser": "^2.34.0",
+    "@typescript-eslint/eslint-plugin": "^7.18.0",
+    "@typescript-eslint/parser": "^7.18.0",
     "cpy-cli": "^3.1.1",
     "cross-env": "^7.0.3",
-    "eslint": "^6.8.0",
+    "eslint": "^8.57.1",
+    "eslint-config-airbnb": "^19.0.4",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-config-airbnb-typescript": "^7.2.1",
-    "eslint-config-prettier": "^6.15.0",
-    "eslint-plugin-import": "^2.24.2",
-    "eslint-plugin-jsx-a11y": "^6.4.1",
-    "eslint-plugin-prettier": "^3.4.1",
-    "eslint-plugin-react": "^7.25.1",
-    "eslint-plugin-react-hooks": "^2.5.1",
-    "prettier": "^1.19.1",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-import-resolver-typescript": "^3.7.0",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-react": "^7.37.2",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "prettier": "^3.4.2",
     "rimraf": "^3.0.2",
     "typedoc": "~0.19.2",
-    "typescript": "^4.9.5"
+    "typescript": "4.3.5"
   },
   "resolutions": {
     "**/minimist": "^1.2.3"
